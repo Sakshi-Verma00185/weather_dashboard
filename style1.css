@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #4facfe, #00f2fe);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background 0.5s ease;
+}
+
+body.sunny {
+  background: linear-gradient(to bottom, #fceabb, #f8b500);
+}
+
+body.cloudy {
+  background: linear-gradient(to bottom, #d7d2cc, #304352);
+}
+
+body.rainy {
+  background: linear-gradient(to bottom, #2c3e50, #4ca1af);
+}
+
+body.snowy {
+  background: linear-gradient(to bottom, #e6dada, #274046);
+}
+
+.dashboard {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: hidden;
+}
+
+header {
+  padding: 20px;
+  background: #4facfe;
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+header input {
+  width: 60%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+header button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #ff7eb3;
+  color: white;
+  cursor: pointer;
+}
+
+header button:hover {
+  background: #ff506b;
+}
+
+#unit-toggle {
+  background: #4facfe;
+}
+
+.weather-info, .forecast {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.main-info h2 {
+  font-size: 1.5em;
+}
+
+.main-info p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.weather-icon {
+  font-size: 3em;
+  color: #4facfe;
+}
+
+.details p {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.details i {
+  margin-right: 10px;
+  color: #4facfe;
+}
+
+#forecast-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.forecast-card {
+  flex: 1 1 calc(50% - 10px);
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-card i {
+  font-size: 2em;
+  color: #4facfe;
+}
+
